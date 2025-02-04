@@ -404,13 +404,19 @@
   
   .list-row.pojistovny {
     margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   .logo-pojistovna {
     max-width: 100%;
-    height: auto;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px;
   }
   
   .center {
@@ -941,6 +947,108 @@
   .hamburger {
     margin-top: 11px;
     font-size: 40px;
+  }
+  
+  .column-0-padding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .logo-pojistovna {
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    
+    .column-0-padding {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .logo-pojistovna {
+        height: 35px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .column-0-padding {
+        height: 70px;
+    }
+  }
+  
+  .pojistovny-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logos-row, .labels-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .logos-row {
+    margin-bottom: 20px;
+  }
+  
+  /* Create consistent width containers for both logos and labels */
+  .logo-pojistovna, .labels-row h3 {
+    width: calc((100% - 100px) / 6); /* 100px accounts for the total gap space */
+    min-width: 100px; /* Prevent logos from getting too small */
+  }
+  
+  .logo-pojistovna {
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .labels-row h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .logo-pojistovna, .labels-row h3 {
+        width: calc((100% - 40px) / 3); /* 40px accounts for the gap between 3 items */
+    }
+    
+    .logo-pojistovna {
+        height: 40px;
+    }
+    
+    .labels-row h3 {
+        font-size: 14px;
+    }
+    
+    .logos-row, .labels-row {
+        justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .logo-pojistovna, .labels-row h3 {
+        width: calc((100% - 20px) / 2); /* 20px accounts for the gap between 2 items */
+    }
+    
+    .logo-pojistovna {
+        height: 35px;
+    }
+    
+    .labels-row h3 {
+        font-size: 12px;
+    }
   }
   
   
