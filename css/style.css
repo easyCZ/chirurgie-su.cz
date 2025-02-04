@@ -407,52 +407,10 @@
   }
   
   .logo-pojistovna {
-    text-align: center;
-    height: 50px;
-    margin-bottom: 15px;
-  }
-  
-  .logo-pojistovna.vzp {
-    background-image: url('../images/logo-vzp.png');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: scroll;
-  }
-  
-  .logo-pojistovna.vozp {
-    background-image: url('../images/logo-vozp.png');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .logo-pojistovna.cpzp {
-    background-image: url('../images/logo-cpzp.png');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .logo-pojistovna.ozp {
-    background-image: url('../images/logo-ozp.png');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .logo-pojistovna.zps {
-    background-image: url('../images/logo-zps.png');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .logo-pojistovna.zpmvcr {
-    background-image: url('../images/logo-zpmv.png');
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
   
   .center {
@@ -844,7 +802,7 @@
       width: 90%;
     }
   
-    .logo-pojistovna, .logo-pojistovna.ozp {
+    .logo-pojistovna {
       height: 40px;
     }
   
