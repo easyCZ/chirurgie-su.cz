@@ -96,6 +96,41 @@
     line-height: 24px;
     list-style-type: disc;
   }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav .right {
+    align-content: center;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+ nav .left, nav .right {
+    flex-grow: 1;
+    flex-basis: 0;
+ }
+
+ nav .hollow-button a {
+    color: white;
+ }
+
+ nav .hollow-button:hover  {
+    background-color: #e64949;
+ }
   
   .brand-text {
     color: #e64949;
@@ -175,7 +210,7 @@
     color: #fff;
     text-align: left;
     letter-spacing: 0;
-    width: 515px;
+    width: 700px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -229,7 +264,7 @@
   }
   
   .hollow-button.red:hover {
-    background-color: #0000;
+    background-color: #cc3333;
   }
   
   .section-heading {
@@ -305,6 +340,15 @@
     font-weight: 700;
     display: block;
   }
+
+  .nav-phone {
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    max-height: 100%;
+  }
   
   .nav-link:hover {
     color: #e64949;
@@ -349,7 +393,7 @@
   }
   
   .banner {
-    background-image: radial-gradient(circle farthest-side, #2ba5d9cc, #2ba5d980), url('../images/intro-bg.jpg');
+    background-image: radial-gradient(circle farthest-side, #2ba5d9cc, #2ba5d980), url('../img/banner.jpg');
     background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -673,11 +717,11 @@
     }
   
     .hero-title-wrapper {
-      top: 15%;
+      top: 10%;
     }
   
     .left-navigation {
-      float: none;
+      display: flex;
       border-style: none none solid;
       border-width: 0 0 1px;
       border-bottom-color: #ecf0f1;
@@ -719,8 +763,8 @@
   
     .banner {
       border-style: none;
-      height: 700px;
-      margin-top: 60px;
+      height: 600px;
+      /* margin-top: 60px; */
     }
   
     .list.clean.cenik {
@@ -728,7 +772,6 @@
     }
   
     .hamburger {
-      margin-top: 11px;
       font-size: 40px;
     }
   
@@ -945,7 +988,7 @@
   }
   
   .hamburger {
-    margin-top: 11px;
+    /* margin-top: 11px; */
     font-size: 40px;
   }
   
